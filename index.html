@@ -6,49 +6,148 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restate</title>
+
+    <!-- !Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;600;800&family=Roboto:wght@400;700&family=Rubik:wght@300;400;600;700&family=Urbanist:wght@300;700&display=swap"
+        rel="stylesheet">
+    <!-- !Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <!-- !Exxternal Css -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav class="nav-bar">
-        <a class="logo" href="index.html">
-            <i></i>
-            <p class="logo-title">Restate</p>
-        </a>
 
-        <div class="menu">
-            <ul class="list">
-                <li class="list-item">
-                    <a class="list-link" href="#">Menu</a>
-                </li>
 
-                <li class="list-item">
-                    <a class="list-link" href="#">Explore</a>
-                </li>
+    <header class="heading-section">
+        <div class="nav-bar">
+            <a class="logo" href="index.html">
+                <!-- <div class="logo-icon"> -->
+                <i>
+                    <i class="bi bi-house-door-fill logo-icon"></i>
+                </i>
+                <!-- </div> -->
+                <p class="logo-title">Restate</p>
+            </a>
 
-                <li class="list-item">
-                    <a class="list-link" href="#">Resources</a>
-                </li>
+            <div class="menu">
+                <ul class="list">
+                    <li class="list-item">
+                        <a class="list-link" href="#">Home</a>
+                    </li>
 
-                <li class="list-item">
-                    <a class="list-link" href="#">Contact</a>
-                </li>
+                    <li class="list-item">
+                        <a class="list-link" href="#">Explore</a>
+                    </li>
 
-                <li class="list-item">
-                    <a class="list-link" href="#">Blog</a>
-                </li>
-            </ul>
+                    <li class="list-item">
+                        <a class="list-link" href="#">Resources</a>
+                    </li>
+
+                    <li class="list-item">
+                        <a class="list-link" href="#">Contact</a>
+                    </li>
+
+                    <li class="list-item">
+                        <a class="list-link" href="#">Blog</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="right-menu">
+                <a href="#" class="sign-in">
+                    Sign in
+                </a>
+                <a href="#" class="sign-up btn">
+                    Sign up
+                </a>
+            </div>
+        </div>
+        <div class="heading-content">
+            <h1 class="heading">
+                Your perfect home <br> is waiting for you
+            </h1>
+            <p class="para">
+                We have more than 200k properties around the <br> world to show you
+            </p>
+            <a href="#" class="btn explore-btn">
+                Explore more
+            </a>
         </div>
 
-        <div class="right-menu">
-            <a href="#" class="sign-in">
-                Sign in
-            </a>
-            <a href="#" class="sign-in">
-                Sign up
-            </a>
+
+        <!-- !Order service Section -->
+    <div class="order">
+            <div class="option">
+                <p>Location</p>
+                <div class="btn">
+                  Toronto
+                </div>
+            </div>
+
+            <div class="option">
+                <p>Type</p>
+                <div class="btn">
+                    Apartment
+                </div>
+            </div>
+
+            <div class="option">
+                <p>Price range</p>
+                <div class="btn">
+                   300k - 600k
+                </div>
+            </div>
+
+            <div class="search-btn btn">
+                Search
+            </div>
+    </div>
+    </header>
+
+    
+
+
+    <!-- !Contains the about section of the websites -->
+    <section class="about-section container">
+        <div class="about">
+            <div class="img">
+                <img src="img/landing-img.jpg" alt="" class="about-img">
+            </div>
+
+            <div class="about-content">
+                <h2 class="sub-heading">
+                    We are the best and most trusted <span>Real estate agent</span>
+                </h2>
+
+                <p class="para">
+                    We've helped a lot of people to find their dream home.
+                </p>
+
+                <div class="info">
+                    <div class="info-1 info-list">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <p>678k buyers have worked with me</p>
+                    </div>
+
+
+                    <div class="info-2 info-list">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <p>Professional and experienced resources</p>
+                    </div>
+
+
+                    <div class="info-3 info-list">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <p>Provide the best service for users</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </nav>
+    </section>
 </body>
 
 </html>
