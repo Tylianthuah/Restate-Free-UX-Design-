@@ -42,7 +42,7 @@ ul {
 
 .para {
     color: #ccc;
-    font-size: 16px;
+    font-size: 18px;
     letter-spacing: 2px;
 }
 .sub-heading {
@@ -56,6 +56,7 @@ ul {
 img {
     width: 100%;
     display: block;
+    border-radius: 30px;
 }
 
 
@@ -207,7 +208,7 @@ margin-top: 10px;
     font-size: 1.8rem;
 }
 
-.info-list p {
+.small-title {
     color: #000;
     font-weight: bold;
 }
@@ -275,12 +276,13 @@ margin-top: 10px;
 .home-section {
     background-color: var(--secondary-color);
 }
-.home-section .container {
+ .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .title {
     margin-top: 60px;
     font-size: 4.5rem;
@@ -337,8 +339,7 @@ margin-top: 10px;
 .for-sale:hover {
     transform: scale(1.1);
 }
-
-.home-section .text-small {
+ .text-small {
     font-size: 16px;
     color: #333;
 }
@@ -375,5 +376,87 @@ margin-top: 10px;
 .view-details:hover {
     background-color: blue;
     letter-spacing:1.5px;
+}
+
+/* !Service Section */
+.service-section {
+    text-align: center;
+    background-color: var(--secondary-color);   
+}
+
+.service-section .title {
+    margin-top: 30px;
+}
+
+.service-section .para {
+    margin: 50px 0 70px 0;
+    color: #333;
+}
+
+.service-section .box {
+    grid-template-columns: repeat(3, 350px);
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    padding: 23px 20px;
+    border-radius: 50% ;
+    background-color: pink;
+    margin: auto;
+}
+
+.service-section i {
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 5px 8px;
+    border-radius: 50%;
+    background-color: purple;
+}
+
+/* !Video Section */
+
+
+.video-section .container {
+    padding: 80px 80px 0;
+    position: relative;
+}
+.video-section img {
+    margin-top: 60px ;
+    border-radius: 20px 20px 0 0;
+    height: 750px;
+}
+
+.desc {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    position: absolute;
+    left:110px;
+    bottom: 50px;
+    color: #fff;
+}
+
+.desc .title {
+    text-transform: capitalize;
+    margin: auto;
+}
+
+.video-section i {
+    font-size: 4rem;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
 }
 
