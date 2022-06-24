@@ -425,13 +425,14 @@ margin-top: 10px;
 
 
 .video-section .container {
-    padding: 80px 80px 0;
+    padding: 80px 80px  0 80px;
     position: relative;
+    background-color: #ccc;
 }
 .video-section img {
     margin-top: 60px ;
     border-radius: 20px 20px 0 0;
-    height: 750px;
+    /* height: 750px; */
 }
 
 .desc {
@@ -448,7 +449,7 @@ margin-top: 10px;
     margin: auto;
 }
 
-.video-section i {
+.video-section .play-icon {
     font-size: 4rem;
     border-radius: 50%;
     background-color: #fff;
@@ -460,3 +461,111 @@ margin-top: 10px;
     transform: translate(-50%, -50%);
 }
 
+
+/* !Blog Section */
+.blog-section {
+    background-color: var(--secondary-color);
+}
+
+.blog-content {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 30px;
+    justify-content: center;
+    height: 100%;
+}
+
+.blog-section .blog-left img {
+    width: 150px;
+    height: 140px;
+}
+
+.blog-right img{
+    height: 100%;
+}
+.blog-left {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.blog-left .blog-item {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.blog-left .para {
+    color: #000;
+    font-weight: bold;
+}
+
+.blog-left .blog-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.blog-left .blog-date {
+    color: var(--pink-color);
+}
+
+/* !Choose-section */
+.choose-section {
+    background-color: var(--secondary-color);
+    /* height: 750px; */
+}
+
+.choose-section .choose-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+}
+.choose-content .choose-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 90px;
+}
+
+.choose-section .title {
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.choose-section img {
+    height: 600px;
+    width: 100%;
+}
+
+.choose-left {
+    position: relative;
+}
+.choose-content .choose-img-video {
+    position: absolute;
+    height: 300px;
+    width: 390px;
+    left: 350px;
+    bottom: 100px;
+    border: 5px solid #fff;
+}
+
+.choose-content .para {
+    color: #333;
+}
+
+.choose-content .btn {
+    color: #fff;
+    font-weight: bold;
+    padding: 20px 40px;
+    background-color: var(--pink-color);
+    margin: auto;
+    margin-left: 0;
+    border-radius: 25px;
+    font-size: 1.5rem;
+}
