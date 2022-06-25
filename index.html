@@ -14,6 +14,8 @@
         href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;600;800&family=Roboto:wght@400;700&family=Rubik:wght@300;400;600;700&family=Urbanist:wght@300;700&display=swap"
         rel="stylesheet">
 
+    <!-- !Remix icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <!-- !Font Awesome -->
     <script src="https://kit.fontawesome.com/4b77b23610.js" crossorigin="anonymous"></script>
     <!-- !Bootstrap Icon -->
@@ -36,7 +38,7 @@
                 <p class="logo-title">Restate</p>
             </a>
 
-            <div class="menu">
+            <div class="menu" id="menu">
                 <ul class="list">
                     <li class="list-item">
                         <a class="list-link" href="#">Home</a>
@@ -60,13 +62,19 @@
                 </ul>
             </div>
 
-            <div class="right-menu">
-                <a href="#" class="sign-in">
+            <div class="right-menu ">
+                <a href="#" class="sign-in screen-sm-hidden">
                     Sign in
                 </a>
-                <a href="#" class="sign-up btn">
+                <a href="#" class="sign-up btn screen-sm-hidden">
                     Sign up
                 </a>
+
+                <button class="screen-lg-hidden menu-toggle-icon" id="menu-toggle-btn">
+                    <i class="ri-menu-3-line open-menu-icon"></i>
+                    <i class="ri-close-line close-menu-icon"></i>
+                </button>
+
             </div>
         </div>
         <div class="heading-content">
@@ -83,7 +91,7 @@
 
 
         <!-- !Order service Section -->
-        <div class="order">
+        <div class="order screen-sm-hidden">
             <div class="option">
                 <p>Location</p>
                 <div class="btn">
@@ -115,7 +123,7 @@
     <!-- !Contains the about section of the websites -->
     <section class="about-section container">
         <div class="about">
-            <div class="img">
+            <div class="img screen-sm-hidden">
                 <img src="img/landing-img.jpg" alt="" class="about-img">
             </div>
 
@@ -279,8 +287,10 @@
 
     <section class="video-section">
         <div class="container">
-            <img src="img/video-img.jpg" alt="">
-            <i class="bi bi-play-circle-fill play-icon"></i>
+            <div class="img-container">
+                <img src="img/video-img.jpg" alt="">
+                <i class="bi bi-play-circle-fill play-icon"></i>
+            </div>
             <div class="desc">
                 <p class="title">Looking <br> for a new place?</p>
                 <p class="para">We make quality-driven ethical and mindful work</p>
@@ -334,8 +344,11 @@
         <div class="container">
             <div class="choose-content">
                 <div class="choose-left">
-                    <img src="img/heading-img.jpg" alt="">
-                    <img class="choose-img-video" src="img/landing-img.jpg" alt="">
+                    <img class="main-img" src="img/heading-img.jpg" alt="">
+                    <div class="small-video">
+                        <img class="choose-img-video" src="img/landing-img.jpg" alt="">
+                        <i class="bi bi-play-circle-fill play-icon"></i>
+                    </div>
                 </div>
 
                 <div class="choose-right">
@@ -347,6 +360,67 @@
             </div>
         </div>
     </section>
+
+    <section class="footer-section">
+        <div class="container">
+            <div class="footer">
+                <div class="company">
+                    <a class="logo" href="index.html">
+                        <i>
+                            <i class="bi bi-house-door-fill logo-icon"></i>
+                        </i>
+                        <p class="logo-title">Restate</p>
+                    </a>
+
+                    <p class="para">We have a lot of experience with real estate properties and
+                        working with different
+                        customers around the world</p>
+
+                    <p class="small-title">Follow Us</p>
+                    <div class="social-media">
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-tiktok"></i>
+                    </div>
+                </div>
+
+
+
+
+                <div class="company-info">
+                    <div class="first">
+                        <p class="company-heading">Information</p>
+                        <ul>
+                            <li class="text-small">Home</li>
+                            <li class="text-small">Explore</li>
+                            <li class="text-small">Resources</li>
+                            <li class="text-small">Contact</li>
+                            <li class="text-small">Blog</li>
+                        </ul>
+                    </div>
+
+                    <div class="second">
+                        <p class="company-heading">Helpful Links</p>
+                        <ul>
+                            <li class="text-small">Properties</li>
+                            <li class="text-small">Supports</li>
+                            <li class="text-small">Terms & Conditions</li>
+                            <li class="text-small">Privacy</li>
+                        </ul>
+                    </div>
+
+                    <div class="third">
+                        <p class="company-heading">Contact</p>
+                        <ul>
+                            <li class="text-small">+914512312368</li>
+                            <li class="text-small">tylian15@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+        </div>
+    </section>
 </body>
+<script src="main.js"></script>
 
 </html>
